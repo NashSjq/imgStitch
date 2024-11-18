@@ -137,6 +137,7 @@ class SIFT(Extractor):
                 f"Unknown backend: {backend} not in " f"{{{','.join(backends)}}}."
             )
 
+
     def extract_single_image(self, image: torch.Tensor):
         image_np = image.cpu().numpy().squeeze(0)
 
